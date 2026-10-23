@@ -6,6 +6,10 @@ Room information comes from the accommodation provider. This component does not 
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Hotel Room Compare](https://hotel-website-design.github.io/hotel-room-compare/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.
