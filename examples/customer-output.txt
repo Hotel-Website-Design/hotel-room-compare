@@ -1,0 +1,23 @@
+Your direct-booking cost scenario
+
+Monthly figures, rounded to the nearest penny. The same room revenue is assumed in both routes.
+
+Revenue moved to direct: £2,400.00
+
+Avoided platform commission: £360.00
+
+New direct percentage fees: £48.00
+
+Net monthly cost reduction: £212.00 (After the additional monthly cost you entered.)
+
+Assumptions you supplied
+- Room revenue: £40,000.00
+- Platform share: 60%; commission: 15%.
+- Assumed share of platform revenue moved to direct: 10%.
+- Direct percentage fee: 2%; additional monthly cost: £100.00.
+
+How to read the comparison
+- Platform revenue in this scenario: £24,000.00.
+- Avoided commission £360.00 minus direct fees £48.00 minus additional monthly costs £100.00 = £212.00.
+- Under these assumptions, the entered costs are lower by £212.00 per month.
+- This does not show extra bookings, profit or a guaranteed saving. Consider acquisition costs and contract details before making a decision.

@@ -1,7 +1,7 @@
 {
   "name": "hotel-room-compare",
-  "version": "0.1.0",
-  "description": "Compare supplied hotel room facts and access information without implying live availability.",
+  "version": "0.2.0",
+  "description": "Compare the costs in your own booking scenario, using your commission, payment fees and website costs.",
   "type": "module",
   "private": false,
   "license": "MIT",

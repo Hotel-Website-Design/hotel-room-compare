@@ -1,60 +1,51 @@
-# Hotel Room Compare
+# Direct Booking Cost Comparison
 
-Hotel Room Compare helps guests compare room facts before opening a hotel's booking provider. It keeps room details together on a phone and makes missing information visible rather than guessing.
+Compare the costs in your own booking scenario, using your commission, payment fees and website costs.
 
-Room information comes from the accommodation provider. This component does not check availability or confirm that a room meets a guest's needs. Maintained by [Hotel Website Design](https://hotelwebsitedesign.uk/), operated by JW Digital Services Ltd.
+**For independent hotel owners. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://hotel-website-design.github.io/hotel-room-compare/) · [See a fictional worked example](https://hotel-website-design.github.io/hotel-room-compare/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Hotel Room Compare](https://hotel-website-design.github.io/hotel-room-compare/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Compare my scenario** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+An illustrative monthly cost comparison with every assumption shown.
+
+## What to expect
+
+Use a consistent monthly room-revenue basis and your actual contract rates. The shift to direct bookings is an assumption you choose, not a prediction.
+
+This is a simplified cost scenario, not a profit or booking forecast. It excludes tax treatment, refunds, cancellations, marketing, staffing and costs you have not entered. Check how your provider defines commissionable revenue.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [Hotel Website Design](https://hotelwebsitedesign.uk/). The tool is maintained by Hotel Website Design, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+Further reading: [Booking.com explains where to find your commission rate](https://join.booking.com/faq.html).
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-Supply hotel and rooms: id, name, occupancy (integer), beds, size (string or null), amenities (array), access_note (approved text or null), booking_url (safe HTTPS or null), contact_note. Unknown access information stays unknown. Rates and availability are outside scope.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-This resource uses nested JSON input. See the complete example and `node cli.mjs --help`.
-
-## Worked example
-
-Use a fictional independent hotel with a compact double, a family room and a room with a detailed supplied access description. Include one unknown room size and an amenity that is shared by all rooms. Original floor-plan illustrations can explain the layouts without implying a real hotel's facilities.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Every label stays associated with its room at 320 px, with text zoom and without JavaScript.
-- Unknown values stay unknown. Occupancy, bed arrangement and room size cannot be substituted for one another.
-- All optional booking links are explicit external next steps. Missing links have a useful contact fallback.
-- Access notes remain verbatim approved input; no universal suitability or compliance badge is generated.
-- Images have useful alternatives, native dimensions and responsive sizes. Comparison order is logical for keyboard and screen-reader users.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/Hotel-Website-Design/hotel-room-compare/issues) for a reproducible bug and [Discussions](https://github.com/Hotel-Website-Design/hotel-room-compare/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/Hotel-Website-Design/hotel-room-compare/discussions/1).

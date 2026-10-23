@@ -3,9 +3,10 @@
   "org": "Hotel-Website-Design",
   "brand": "Hotel Website Design",
   "slug": "hotel-room-compare",
-  "title": "Hotel Room Compare",
+  "title": "Direct Booking Cost Comparison",
   "profile": "Independent hotel websites with clear room information and booking next steps. Operated by JW Digital Services Ltd.",
-  "accent": "#36554d",
-  "tint": "#edf1e7",
-  "summary": "Compare supplied hotel room facts and access information without implying live availability."
+  "accent": "#a37d38",
+  "tint": "#eee3cd",
+  "summary": "Compare the costs in your own booking scenario, using your commission, payment fees and website costs.",
+  "brandMark": "<svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 43V17h10v26M17 43V9h14v34M31 43V20h10v23M3 43h42M24 2v40M11 23h2m-2 7h2m-2 7h2M35 26h2m-2 7h2m-2 7h2\"/></svg>"
 }
