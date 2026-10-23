@@ -1,0 +1,4 @@
+{
+  "title": "Which room differences should a guest be able to compare quickly",
+  "body": "Open the fictional hotel's three-room example at desktop and mobile widths. Tell us which facts need clearer labels or a better comparison order. Please avoid sharing guest details or copying a hotel's images without permission. [Hotel Website Design](https://hotelwebsitedesign.uk/) maintains the component. Suggestions about presenting supplied access information are welcome; suitability decisions remain with the guest and provider.\n\nStart with the [README](https://github.com/Hotel-Website-Design/hotel-room-compare#readme), then run the documented example locally."
+}

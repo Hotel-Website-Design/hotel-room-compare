@@ -1,0 +1,50 @@
+{
+  "title": "The Fern House / fictional hotel room comparison",
+  "summary": "Compare supplied room facts. Missing information is not a suitability decision. No live availability or rates.",
+  "rooms": [
+    {
+      "id": "double",
+      "name": "Compact double",
+      "occupancy": 2,
+      "beds": "One double bed",
+      "size": "18 m²",
+      "amenities": [
+        "Wi-Fi",
+        "Tea and coffee"
+      ],
+      "access_note": null,
+      "booking_url": "https://example.com/rooms/double",
+      "contact_note": "Ask the provider about room details before booking."
+    },
+    {
+      "id": "family",
+      "name": "Family room",
+      "occupancy": 4,
+      "beds": "One double and two single beds",
+      "size": null,
+      "amenities": [
+        "Wi-Fi",
+        "Tea and coffee"
+      ],
+      "access_note": "The fictional room is on the first floor. Ask the provider about access arrangements.",
+      "booking_url": "https://example.com/rooms/family",
+      "contact_note": "Check the actual bed layout with the provider."
+    },
+    {
+      "id": "ground",
+      "name": "Ground-floor room",
+      "occupancy": 2,
+      "beds": "Two single beds",
+      "size": "24 m²",
+      "amenities": [
+        "Wi-Fi",
+        "Tea and coffee"
+      ],
+      "access_note": "Supplied fictional note: step-free entrance from the courtyard. Other requirements must be discussed with the provider.",
+      "booking_url": null,
+      "contact_note": "Ask the provider about your individual access needs and booking."
+    }
+  ],
+  "issues": [],
+  "markdown": "## Compact double\n\nOccupancy: 2\nBeds: One double bed\nSize: 18 m²\nAccess information: Ask the provider\nAsk the provider about room details before booking.\n\n## Family room\n\nOccupancy: 4\nBeds: One double and two single beds\nSize: Not supplied\nAccess information: The fictional room is on the first floor. Ask the provider about access arrangements.\nCheck the actual bed layout with the provider.\n\n## Ground-floor room\n\nOccupancy: 2\nBeds: Two single beds\nSize: 24 m²\nAccess information: Supplied fictional note: step-free entrance from the courtyard. Other requirements must be discussed with the provider.\nAsk the provider about your individual access needs and booking."
+}

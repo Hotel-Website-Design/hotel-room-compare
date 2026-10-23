@@ -1,0 +1,22 @@
+{
+  "name": "hotel-room-compare",
+  "version": "0.1.0",
+  "description": "Compare supplied hotel room facts and access information without implying live availability.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node --test && node scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hotel-Website-Design/hotel-room-compare.git"
+  },
+  "homepage": "https://hotelwebsitedesign.uk/"
+}
